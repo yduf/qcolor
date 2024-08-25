@@ -262,8 +262,13 @@ int main(int argc, char **argv) {
     start = stop.now;
     cerr << "Color quantisation " << stop.ms_used << "ms\n";
 
+    // Display the palette
+    for(Color &c : palette) {
+        cout << "Color: (" << c.r << ", " << c.g << ", " << c.b << ")" << endl;
+    }
+
     // this is very slow
-    if( true) {
+    if( false) {
     saveQuantizedImage(image, palette, argv[3]);
 
     stop = elapsed();

@@ -1,0 +1,12 @@
+
+2024-08-25 - Rewrite pixel extraction code 
+Takes 80ms overall on same images (saving code not yet redone)
+support only 8bits images.
+
+
+2024-08-18 - Initial version created by ChatGPT
+https://chatgpt.com/share/f114967c-fc2f-4aa6-bbcb-0e29fa328d47
+Takes 23s to load pixel into color structs on a 400x250 images
+Sames to save converted images
+
+Code is slow because it doesn't understand that libvips pixel access is _very_ slow.

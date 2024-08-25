@@ -1,4 +1,4 @@
-# Color Quantisation
+# Color Quantisation (alphà)
 
 Licensed under the [GNU General Public License, version 3. (GPLv3)](https://www.gnu.org/licenses/gpl-3.0.html)
 
@@ -19,6 +19,9 @@ meson build .
 cd build
 meson compile
 ```
+
+**Notes** - current version has a dependancy on _"myFunc"_ which is a private Repos,
+remove _elapsed_ call to compile.
 
 ## Usage
 ```bash
